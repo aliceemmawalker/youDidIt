@@ -14,35 +14,13 @@ class ViewController: UIViewController {
     
     
      var audioPlayer = AVAudioPlayer()
-    
-    var isPlaying = false
-    var timer:NSTimer!
-    
-   // var audioPath = NSURL(fileURLWithPath: NSBundle().pathForResource("cheer", ofType: "mp3")!)
-    
-    //var playPauseBtn = UIButton()
-        
-    //var musicPaused: Bool = false
+   
+
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        do{
-//       
-//        audioPlayer = try AVAudioPlayer(contentsOfURL: audioPath)
-//        audioPlayer.prepareToPlay()
-//        }catch{
-//            print("no worky");
-//        }
-        
-        
-        //let music = Bundle.main.path(forResource: "cheer", ofType: "mp3")
-        // copy this syntax, it tells the compiler what to do when action is received
-        
-        
-        
         
         
     }
@@ -62,36 +40,25 @@ class ViewController: UIViewController {
         
         let cheerSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("cheer", ofType: "mp3")!)
         do {
-            audioPlayer = try AVAudioPlayer(contentsOfURL: cheerSound)
-            audioPlayer.prepareToPlay()
-            print("audio playing")
+           
+
+                //audioPlayer.pause()
+                audioPlayer = try AVAudioPlayer(contentsOfURL: cheerSound)
+                audioPlayer.prepareToPlay()
+                print("audio playing")
+          
+      
         } catch {
             print("Problem in getting File")
         }
-       
-//        
-//        if isPlaying {
-//            audioPlayer.pause()
-//            isPlaying = false
-//        } else {
-//            audioPlayer.play()
-//            isPlaying = true
-//            
-//            timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "updateTime", userInfo: nil, repeats: true)
-//        }
-        
-        
-      
         
         
         
         
-        
-        
-        
-        
-        //
     }
+    
+    
+
     
     
     

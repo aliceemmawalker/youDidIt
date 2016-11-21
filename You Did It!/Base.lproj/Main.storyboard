@@ -20,12 +20,21 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9qC-KV-vJz">
                                 <rect key="frame" x="121" y="248" width="132" height="171"/>
                                 <color key="backgroundColor" red="1" green="0.9210422239849626" blue="0.19153556015763218" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="27"/>
                                 <state key="normal" title="YAY!">
                                     <color key="titleColor" red="1" green="0.11998722730612743" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <state key="selected" title="Cheering!"/>
                                 <connections>
                                     <action selector="yayButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n43-ay-e7P"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9o-VZ-St3">
+                                <rect key="frame" x="169" y="544" width="36" height="30"/>
+                                <state key="normal" title="test2"/>
+                                <state key="selected" title="Pressed"/>
+                                <connections>
+                                    <action selector="yayButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eJm-Mc-Yy5"/>
                                 </connections>
                             </button>
                         </subviews>
